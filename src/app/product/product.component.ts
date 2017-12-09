@@ -9,6 +9,8 @@ export class ProductComponent implements OnInit {
 
   private products: Array<Product>;
 
+  private imgUrl: string;
+
   constructor() { }
 
   ngOnInit() {
@@ -19,7 +21,8 @@ export class ProductComponent implements OnInit {
       new Product(4,"第四个商品",4.99,1.5,"这是我的第四个商品，在我在学习慕课网Angular入门实战创建的",["电器"]),
       new Product(5,"第五个商品",5.99,3.5,"这是我的第五个商品，在我在学习慕课网Angular入门实战创建的",["家具"]),
       new Product(6,"第六个商品",6.99,2.5,"这是我的第六个商品，在我在学习慕课网Angular入门实战创建的",["学习产品","电子设备"])
-    ]
+    ];
+    this.imgUrl = 'http://via.placeholder.com/320x150';
   }
 
 }
